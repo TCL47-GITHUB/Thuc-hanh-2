@@ -1,0 +1,71 @@
+body {
+  font-family: "Inter";
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #043873;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+* img {
+  width: 100%;
+  height: auto;
+}
+
+.section-mv {
+  text-align: center;
+  width: 100vw;
+  height: 137vw;
+  background-color: #043873;
+  background-image: url("../../assets/image/background-img.png");
+  background-repeat: no-repeat;
+  background-size: 100vw 90vw;
+  color: #fff;
+}
+.section-mv__rect {
+  height: 18vw;
+}
+.section-mv__title {
+  font-size: 7vw;
+}
+.section-mv__desc {
+  font-size: 2.5vw;
+  margin-top: 3.12vw;
+  margin-bottom: 7.8vw;
+}
+.section-mv__button {
+  background-color: #4F9CF9;
+  padding: 2.6vw 5.2vw;
+  border: none;
+  color: #fff;
+  border-radius: 1vw;
+}
+.section-mv__img {
+  width: 71.7vw;
+  height: 47.8vw;
+  margin: 13vw auto;
+  background-color: #C4DEFD;
+}
+
+.section-management {
+  text-align: center;
+  width: 100vw;
+  height: 137vw;
+  color: #000;
+}
+.section-management__title {
+  font-size: 7vw;
+}
+.section-management__desc {
+  font-size: 2.5vw;
+  margin-top: 3.12vw;
+  margin-bottom: 7.8vw;
+}
