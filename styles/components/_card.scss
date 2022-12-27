@@ -1,0 +1,295 @@
+.card {
+    width: 100%;
+}
+
+.card-plan {
+    display: flex;
+    overflow-x: scroll;
+    height: 92vw;
+    width: 100%;
+    gap: 0 4vw;
+    //position: relative;
+    //transform: translateX(-30%);
+    margin-top: 7.8vw;
+
+    @include pc {
+        width: 100%;
+        height: 761px;
+        gap: 0 32px;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    &__item {
+        height: 92vw;
+        width: 61vw;
+        border: 1px solid var(--color4);
+        border-radius: 1.3vw;
+        padding: 10vw 5.7vw;
+        color: #000;
+        display: flex;
+        flex-direction: column;
+
+        &--active {
+            background-color: var(--color1);
+            color: #fff;
+        }
+
+        @include pc {
+            width: 472px;
+            height: 761px;
+            padding: 80px 44px;
+        }
+
+        .item-title {
+            display: flex;
+            flex-direction: column;
+            width: 50vw;
+            height: 19vw;
+            gap: 3.2vw;
+
+            @include pc {
+                gap: 0 25px;
+                width: 384px;
+                height: 150px;
+            }
+
+            &__name {
+                font-size: 3vw;
+                font-weight: 600;
+
+                @include pc {
+                    font-size: 24px;
+                }
+            }
+
+            &__price {
+                font-size: 4.6vw;
+                font-weight: 700;
+                color: var(--color4);
+
+                @include pc {
+                    font-size: 36px;
+                }
+            }
+
+            &__para {
+                font-size: 2vw;
+                font-weight: 400;
+
+                @include pc {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .item-details {
+            display: flex;
+            flex-direction: column;
+            margin: 3vw;
+            gap: 3.6vw 0;
+            width: 50vw;
+            //height: 39vw;
+            position: relative;
+
+            @include pc {
+                margin: 25px;
+                gap: 28px 0;
+                width: 384px;
+                //height: 300px;
+            }
+
+            &__list {
+                font-size: 2vw;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                gap: 0 2.4vw;
+
+                @include pc {
+                    font-size: 16px;
+                    gap: 0 19px;
+                }
+
+                &--yel {
+                    font-size: 2vw;
+                    font-weight: 400;
+                    display: flex;
+                    align-items: center;
+                    gap: 0 2.4vw;
+
+                    @include pc {
+                        font-size: 16px;
+                        gap: 0 19px;
+                    }
+
+                    &:before {
+                        content: '';
+                        position: absolute;
+                        background-image: url("../../assets/images/Icon_check_yel.svg");
+                        background-repeat: no-repeat;
+                        width: 18px;
+                        height: 18px;
+                        left: -25px;
+
+                        @include pc {
+                            width: 18px;
+                            height: 18px;
+                        }
+                    }
+                }
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background-image: url("../../assets/images/Icon_check.svg");
+                    background-repeat: no-repeat;
+                    width: 18px;
+                    height: 18px;
+                    left: -25px;
+
+                    @include pc {
+                        width: 18px;
+                        height: 18px;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+.card-clients {
+    display: flex;
+    overflow-x: scroll;
+    gap: 0 4vw;
+    margin: 7.8vw 0;
+
+
+
+    &__item {
+        background-color: var(--color3);
+
+        &--active {
+            background-color: #fff;
+            filter: drop-shadow(5px 0px 10px #dddddd);
+        }
+
+        &--mb {
+            width: 44vw;
+            height: 56vw;
+            // gap: 6.5vw 0;
+            border-radius: 1.3vw;
+            padding: 2.6vw;
+
+            @include pc {
+                display: none;
+            }
+        }
+
+        &--pc {
+            display: none;
+
+            @include pc {
+                display: unset;
+                width: 471px;
+                height: 498px;
+                padding: 60px 40px;
+                gap: 60px 0;
+                border-radius: 10px;
+            }
+        }
+
+        .comment {
+            display: flex;
+            flex-direction: column;
+            gap: 4.5vw 0;
+            width: 39vw;
+            // height: 37vw;
+
+            @include pc {
+                gap: 32px 0;
+                width: 391px;
+                height: 223px;
+            }
+        }
+
+        .name-star {
+            position: relative;
+            width: 39vw;
+            height: 7.29vw;
+            margin-top: 6.5vw;
+            color: #fff;
+
+            &--black {
+                color: #000;
+            }
+
+            &__name {
+                .name-t {
+                    font-size: 2.3vw;
+                    font-weight: 700;
+                }
+
+                .name-p {
+                    font-size: 2.3vw;
+                    font-weight: 400;
+                }
+            }
+
+            &__star {
+                position: absolute;
+                width: 13vw;
+                height: 2vw;
+                top: 0;
+                right: 0;
+            }
+
+            @include pc {
+                display: none;
+            }
+        }
+
+        .name-box {
+            @include pc {
+                display: flex;
+                flex-direction: row;
+                width: 383px;
+                height: 95px;
+                margin-top: 60px;
+                gap: 0 42px;
+
+                &__name {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    .name-t {
+                        font-size: 24px;
+                        font-weight: 700;
+                    }
+
+                    .name-p {
+                        font-size: 16px;
+                        font-weight: 400;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+    }
+
+    @include pc {
+        width: 100%;
+        gap: 0 32px;
+        margin: 60px 0;
+    }
+
+}
+
+.card-slider {
+    margin: 0 auto;
+}

@@ -1,0 +1,88 @@
+.title {
+  text-align: center;
+  font-weight: 700;
+  color: #fff;
+  font-size: 7vw;
+  
+  @include pc {
+    font-size: 64px;
+    text-align: left;
+    line-height: 1;
+  }
+
+  &__clients-sm {
+    @include pc {
+      display: none;
+    }
+  }
+
+  &__clients-lg {
+    display: none;
+
+    @include pc {
+      display: unset;
+    }
+  }
+
+  &--black {
+    color: #212529;
+  }
+
+  &--center {
+    text-align: center;
+  }
+  &--left {
+    text-align: left;
+    @include pc {
+      text-align: center;
+    }
+  }
+
+  &--underline {
+    display: inline-block;
+    padding-bottom: 10px;
+    background-image: url("../../assets/images/project_title_icon.svg");
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 145%;
+  }
+
+}
+
+.para {
+  text-align: center;
+  font-size: 2.3vw;
+  color: #fff;
+  margin-top: 3vw;
+
+  @include pc {
+    margin-top: 24px;
+    font-size: 18px;
+    text-align: left;
+    padding-right: 20px;
+    line-height: 2;
+  }
+  &--center {
+    text-align: center;
+  }
+  &--left {
+    text-align: left;
+    @include pc {
+      text-align: center;
+    }
+  }
+  &--clients {
+    text-align: left;
+    margin-top: unset;
+  }
+
+  &--black {
+    color: #212529;
+  }
+
+  &--un-margin{
+    margin: unset;
+  }
+
+
+}
